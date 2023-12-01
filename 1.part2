@@ -1,0 +1,5 @@
+cat adv2023-1.txt | sed s/one/1/g | sed s/two/2/ | sed s/three/3/ | sed s/four/4/ | sed s/five/5/ | sed s/six/6/ | sed s/seven/7/ | sed s/eight/8/ | sed s/nine/9/ | tr -d "[a-z]" | sed 's/./ &/g;s/^ //' | awk '{FS=" "; print $1$NF ; total+=$1$NF ;  print total }'
+
+this is giving the final value of 53553
+-but- this is incorrect - as i see that the number should be read as a word as encountered and not just convereted arbitrarily as I have
+no idea how to do this
