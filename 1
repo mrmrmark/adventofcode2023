@@ -1,0 +1,1 @@
+cat adv2023-1.txt | tr -d "[a-z]" | awk '{FS=""; print $1$NF ; ans+=$1$NF; print ans}'
